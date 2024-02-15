@@ -1,2 +1,3 @@
 # firstWebpage
 Website using various HTML tags and styling  features using CSS
+This project is a personal website created by Sahil Kapil, showcasing his skills and projects. It features a responsive design with a navigation bar for easy access to different sections. The homepage includes a brief introduction and a captivating image. The "About Me" section provides insights into Sahil's personality and interests. The "Projects" section displays his HTML and web development projects, each with a brief description and a link to view them. Lastly, the "Contact Me" section offers a form for visitors to get in touch with Sahil. Overall, the website demonstrates Sahil's proficiency in HTML, CSS, and JavaScript, as well as his creativity and attention to detail in web design.
