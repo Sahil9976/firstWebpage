@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+        body{
+            background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+            /*Gradiant generator line*/
+        }
+        a{
+            text-decoration: none;
+            font-family: 'Shadows Into Light', cursive;
+            font-weight: bolder;
+        }
+        nav{
+            display: flex;
+            background-color:darkblue;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+           
+        }
+        nav ul{
+            display: flex;
+            align-items: center;
+            padding: 0px 10px;
+            list-style: none;
+        }
+        nav ul li a{
+            font-size: 16px;
+            padding: 0px 15px;
+            color: rgb(255, 255, 255);
+            transition: 0.2;
+            text-transform: uppercase;
+        }
+        nav ul li a:hover{
+            transition: 0.2s;
+            color: lightskyblue;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .hero{
+            padding-top: 130px;
+        }
+        .hero img{
+            border-style: none;
+            border-radius: 50%;
+            margin : 0 auto;
+            max-width: 440px;
+            display: block;
+        }
+        h2{
+            color: black;
+            text-align: center;
+            font-size: 24px;
+            margin: 30px 0px 100px;
+            font-family: 'Shadows Into Light', cursive;
+        }
+        .aboutme{
+            width: 90%;
+            max-width: 1100px;
+            height: auto;
+            background-color: white;
+            text-align: center;
+            padding: 40px 50px 70px;
+            margin: 0 auto;
+            box-shadow:10px 10px 0px rgb(0 0 0 /30%),-10px -10px 0px rgb(255 144 144 / 80%);
+            font-family: 'Shadows Into Light', cursive;
+            background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+        }
+        #s{
+            font-size: 250%;
+        }
+        .aboutme-section{
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: wrap;
+        }
+        .aboutme-image{
+            height: 450px;
+            width: 400px;
+            background-image: url("project1/2018_11_23_19_09_IMG_5863.JPG");
+            background-size: cover;
+            background-position: center;
+        }
+        .aboutme-text{
+            height: auto;
+            width: 40%;
+            margin-left: 40px ;
+            text-align: left;
+            font-size: 150%;
+        }
+        #projects{
+            padding: 5px;
+            margin: 5%;
+            width: 90%;
+            height: auto;
+            text-align: center;
+        }
+        .projects{
+            display: flex;
+            align-items: center;
+            flex-flow: wrap;
+            justify-content: center;
+            background-color: #b49fda;
+        }
+        #projects h2{
+            color: white;
+        }
+        .earth-project{
+            width: 400px;
+            height: 400px;
+            background-color: lightcyan;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("/pexels-pixabay-87651.jpg");
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+            font-family: 'Shadows Into Light';
+        }
+        .wiki-project{
+            width: 400px;
+            height: 400px;
+            background-color: lightcyan;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("/project1/733px-Wikipedia-es-logo-black-on-white.png");
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+            font-family: 'Shadows Into Light';
+        }
+        .text{
+            position: absolute;
+            height: 20px;
+            width: 90%;
+            left: 0;
+            bottom: 0;
+            z-index: 2;
+            background-color: white;
+            overflow: hidden;
+            transition: 0.4s;
+            padding: 20px;
+            background-color:rgb(112, 153, 207)
+        }
+        .text:hover{
+            height: 160px;
+            transition: 0.3s;   
+        }
+        .text h3{
+            margin-top: 3px;
+        }
+        .content{
+            color: black;
+            }
+        .button{
+            border:5px solid lightblue;
+            border-radius: 10px;
+            width :160px;
+            margin-bottom: 100px;
+            margin-left: 10px;
+            background-color: aqua;
+            color:darkmagenta;
+        }
+       
+        .button:hover{
+            transition: 0.2s;
+            background:blueviolet;
+            color: white;
+            border:5px solid lightgreen;
+        }
+
+        .project-name{
+            background-color:lightblue;
+        }
+        .contact{
+            width: 100%;
+            height: auto;
+            padding: 75px 0 50px 0;
+            text-align: center;
+            background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+            font-family: 'Shadows Into Light', cursive;
+            font-size: larger;
+            font-weight: bold;
+        }
+        .contact p{
+            margin-bottom: 50px;
+        }
+        .contact h2,.contact p{
+            color: purple;
+            font-weight: bolder;
+            text-align: center;
+            max-width: 1100px;
+            margin: 10px auto;
+            
+        }
+        .contact-form label{
+            display: block;
+            margin-bottom: 9px;
+        }
+        .message{
+            display: flex;
+            flex-direction: column;
+            margin-left: 42%;
+            max-width: 200px;
+            align-items: center;
+        }
+        .message textarea{
+            border-radius: 5px;
+            border: 0px;
+        }
+        .contact-details{
+            flex: 1;
+        }
+        .message textarea{
+            width: 200%;
+            height: 60%;
+        }
+        .message button{
+            background-color: aqua;
+            color:purple;
+            font-weight: bold;
+            border-radius: 5px;
+            width: 140px;
+            height: 40px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+            
+        }
+        .message button:hover{
+            transition: 0.2s;
+            background:blueviolet;
+            color: white;
+            border:4px solid lightgreen;
+        }
+        footer{
+            height: 70px;
+            background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+        }
+        footer .container{
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .social-media{
+            font-size: 200%;
+            width: auto;
+            margin-left: auto;
+        }
+        .social-media a i{
+            transition: 0.2s;
+        }
+        .social-media a i:hover{
+            color: black;
+            transition: 0.3s;
+        }
+        .copyright{
+            color: rgb(32, 28, 28);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
+        
+        </ul>
+    </nav>
+    <section class="hero">
+            <div class="container">
+                <img src="project1/2018_03_01_12_34_IMG_3119.JPG" alt="">
+                <h2>Hi This is Sahil here</h2>
+            </div>
+    </section>
+    <section id="aboutme" class="aboutme">
+        <h2 id="s">About me</h2>
+        <div class="aboutme-section">
+            <div class="img">
+                <div class="aboutme-image"></div>
+            </div>
+            <div class="aboutme-text">
+                    <p>Hey, this is my homepage, so I have to say something about myself.</p>
+                    <p>I am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to read.</p>
+                    <p> I like to see the sunrise in the morning, I like to see the moonlight at night.</p>
+                    <p>I like to be surrounded by people. I</p>
+                        <p>am also familiar with html, css, checkout my projects here i've done below</p>
+                </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="project">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="earth-project">
+                    <div class="text">
+                        <h3 class="project-name">Earth Facts</h3>
+                        <div class="content">
+                            <p>A html project about some facts about the earth</p>
+                        </div>
+                        <a class="button" href="../html 5/firstProject.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="wiki-project">
+                    <div class="text">
+                        <h3 class="project-name">wikipedia search link</h3>
+                        <div class="content">
+                            <p>this will take you to the wikipedia search page</p>
+                        </div>
+                        <a class="button" href="http://www.wikipedia.com" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contactme" class="contact">
+        <h2>Contact Me</h2>
+        <p>Use this form to get in touch with me .I would love to hear from you</p>
+        <form action="" class="contact-form">
+            <div class="contact-details">
+                <label for="name">Name</label>
+                <input type="text" id="yourname" placeholder="your name">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="reason for your message">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="your email address">
+            </div>
+            <div class="message">
+                <label for="message">Message</label>
+                <textarea name="" id="msg" rows="15"></textarea>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                This Site is &#169; 2022 Sahil Kapil
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/sahilkapil_/?hl=en"><i class="fa fa-instagram" style="font-size:22px;"></i></a>
+                <a href="https://m.facebook.com/sahil.kapil.5872?eav=AfbDSUir1_LXyvBk3anc3F22ZUX499Ei4c9JIS4q7eawx34BEY0Eyss3wA5M3FLxtBU&paipv=0"><i class="fa fa-facebook-official" style="font-size:24px;"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
